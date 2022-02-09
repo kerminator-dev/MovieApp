@@ -23,7 +23,7 @@ search.addEventListener('input', updateValue);
 function updateValue(e) {
     if (e.target.value) {
         // Запрос на сервер:
-        // let searchResult = getMovies(SEARCH_URL + "&query=" + searchItem);
+        // let searchResult = getMovies(SEARCH_URL + "&query=" + e.target.value);
 
         // Поиск среди локальных объектов
         let searchResult = SearchMovies(movies, e.target.value);
@@ -41,8 +41,8 @@ function updateValue(e) {
 function getMovies(url) {
     // Здесь должно быть получение данных через API и вывод данных на экран
     /*
-    fetch(url).then(res => res.json()).then(data => {
-        showMovies(data.results);
+    fetch(url).then(res => res.json()).then(responce => {
+        return responce;
     })
     */
 
