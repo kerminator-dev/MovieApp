@@ -39,10 +39,10 @@ function updateValue(e) {
 // </summay>
 // <param="url">API url</param>
 function getMovies(url) {
-    // Здесь должно быть получение данных через API и вывод данных на экран
+    // Здесь должно быть получение данных через API
     /*
-    fetch(url).then(res => res.json()).then(responce => {
-        return responce;
+    fetch(url).then(res => res.json()).then(obj => {
+        return obj;
     })
     */
 
